@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Josettan's · Cinema Company Restaurant &amp; Caterers</title>
+<meta name="description" content="A cinematic dining experience in Viyyur, Thrissur. Six cuisines, one obsessive kitchen — Malabar Kalyana Biryani, Mandi, Tharavadi chicken — plus multi-cuisine wedding &amp; event catering for 50 to 2,000 plates." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-palette="dark" data-intensity="balanced">
+
+<!-- ============================================================
+     HEADER · marquee + nav
+     ============================================================ -->
+<header>
+  <div class="marquee" role="presentation">
+    <div class="marquee-track">
+      <span class="marquee-item">Now Showing — Kalyana Biryani Season<span class="marquee-dot"></span></span>
+      <span class="marquee-item">★ 4.5 across 6,292 reviews<span class="marquee-dot"></span></span>
+      <span class="marquee-item">Ranked #5 of 1,228 restaurants · Thrissur<span class="marquee-dot"></span></span>
+      <span class="marquee-item">3× Golden Bite Award Winner<span class="marquee-dot"></span></span>
+      <span class="marquee-item">Open today · 11:00 – 23:00<span class="marquee-dot"></span></span>
+      <span class="marquee-item">Catering bookings open for Dec 2026<span class="marquee-dot"></span></span>
+      <!-- duplicate for seamless -50% loop -->
+      <span class="marquee-item">Now Showing — Kalyana Biryani Season<span class="marquee-dot"></span></span>
+      <span class="marquee-item">★ 4.5 across 6,292 reviews<span class="marquee-dot"></span></span>
+      <span class="marquee-item">Ranked #5 of 1,228 restaurants · Thrissur<span class="marquee-dot"></span></span>
+      <span class="marquee-item">3× Golden Bite Award Winner<span class="marquee-dot"></span></span>
+      <span class="marquee-item">Open today · 11:00 – 23:00<span class="marquee-dot"></span></span>
+      <span class="marquee-item">Catering bookings open for Dec 2026<span class="marquee-dot"></span></span>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#home" class="nav-brand" data-nav="home">
+        <svg class="logo-mark" width="36" height="36" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <circle cx="20" cy="20" r="18" stroke="#C9A24B" stroke-width="2" />
+          <circle cx="20" cy="20" r="4.5" fill="#C9A24B" />
+          <circle cx="20" cy="8.5" r="2.6" fill="#C9A24B" />
+          <circle cx="20" cy="31.5" r="2.6" fill="#C9A24B" />
+          <circle cx="8.5" cy="20" r="2.6" fill="#C9A24B" />
+          <circle cx="31.5" cy="20" r="2.6" fill="#C9A24B" />
+          <circle cx="12.2" cy="12.2" r="2.2" fill="#C9A24B" />
+          <circle cx="27.8" cy="12.2" r="2.2" fill="#C9A24B" />
+          <circle cx="12.2" cy="27.8" r="2.2" fill="#C9A24B" />
+          <circle cx="27.8" cy="27.8" r="2.2" fill="#C9A24B" />
+        </svg>
+        <span class="nav-brand-text">
+          <span class="top">JOSETTAN'S</span>
+          <span class="bot">CINEMA COMPANY · EST. THRISSUR</span>
+        </span>
+      </a>
+      <div class="nav-links">
+        <a href="#home" data-nav="home" class="active">Now Showing</a>
+        <a href="#menu" data-nav="menu">The Menu</a>
+        <a href="#catering" data-nav="catering">Catering</a>
+        <a href="#gallery" data-nav="gallery">The Reel</a>
+        <a href="#reserve" data-nav="reserve">Reserve</a>
+      </div>
+      <button class="btn-ticket" data-nav="reserve"><span class="stub-dots"></span>Book a Table</button>
+    </div>
+  </nav>
+</header>
+
+<!-- filmstrip (balanced intensity, showFilmstrip = true) -->
+<div class="filmstrip">
+  <div class="filmstrip-track" id="filmstrip-track"></div>
+</div>
+
+<!-- ============================================================
+     HERO · "Now Showing" variant
+     ============================================================ -->
+<section class="hero" id="home">
+  <div class="sprocket-col left" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="sprocket-col right" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <div class="hero-grid">
+    <div>
+      <div class="hero-tag">
+        <span class="line"></span>
+        <span class="t-mono">A Cinematic Dining Experience · Since Thrissur</span>
+      </div>
+
+      <h1 class="hero-title">
+        Now<br>
+        <span class="gold">Showing —</span><br>
+        <em>kalyana</em><br>
+        <span>biryani.</span>
+      </h1>
+
+      <p class="hero-sub">
+        A restaurant that plays like a movie. Six cuisines, one obsessive kitchen, and a dining room walled with the directors who raised us.
+      </p>
+
+      <div class="hero-ctas">
+        <button class="btn-ticket" data-nav="catering"><span class="stub-dots"></span>Plan a Catering</button>
+        <button class="btn btn-ghost" data-nav="menu">Browse the Menu →</button>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="v">4.5★</span>
+          <span class="l">6,292 reviews</span>
+        </div>
+        <div class="hero-stat">
+          <span class="v">#5</span>
+          <span class="l">of 1,228 in Thrissur</span>
+        </div>
+        <div class="hero-stat">
+          <span class="v">3×</span>
+          <span class="l">Golden Bite Award</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="now-showing">
+      <div class="now-showing-corner">Now Showing</div>
+      <div class="now-showing-img" style="background-image: url(images/biryani.png)"></div>
+      <div class="now-showing-caption">
+        <div class="title">Malabar Kalyana Biryani</div>
+        <div class="meta">Naadan · Drama · Serves 4 · ★ 4.9</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     01 · SIGNATURE REEL
+     ============================================================ -->
+<section class="section section-dark" id="signature">
+  <div class="section-head">
+    <div>
+      <div class="section-eyebrow"><span class="num">01</span><span>Featured Presentations</span></div>
+      <h2 class="section-title">The signature <em>reel</em></h2>
+    </div>
+    <p class="section-kicker">Four dishes that earned the restaurant its rating — and the catering side its phone calls. Order them at the table or build a menu around them.</p>
+  </div>
+  <div class="reel-row">
+    <article class="poster" data-nav="menu">
+      <div class="poster-img">
+        <div class="poster-rating">★ 4.9</div>
+        <img src="images/biryani.png" alt="Malabar Kalyana Biryani" loading="lazy">
+        <div class="poster-genre">Naadan / Drama</div>
+      </div>
+      <div class="poster-body">
+        <h3 class="poster-title">Malabar Kalyana Biryani</h3>
+        <p class="poster-sub">The wedding biryani</p>
+        <div class="poster-meta"><span>Serves 4</span><span>·</span><span>U / Spicy</span></div>
+      </div>
+    </article>
+    <article class="poster" data-nav="menu">
+      <div class="poster-img">
+        <div class="poster-rating">★ 4.8</div>
+        <img src="images/shawarma-rice.png" alt="Masala Shawaya Mandi" loading="lazy">
+        <div class="poster-genre">Arabic / Saga</div>
+      </div>
+      <div class="poster-body">
+        <h3 class="poster-title">Masala Shawaya Mandi</h3>
+        <p class="poster-sub">Arabic, slow-roasted</p>
+        <div class="poster-meta"><span>Serves 2</span><span>·</span><span>U / Mild</span></div>
+      </div>
+    </article>
+    <article class="poster" data-nav="menu">
+      <div class="poster-img">
+        <div class="poster-rating">★ 5.0</div>
+        <img src="images/tharavadi-chicken.png" alt="Tharavadi Chicken" loading="lazy">
+        <div class="poster-genre">Naadan / Period</div>
+      </div>
+      <div class="poster-body">
+        <h3 class="poster-title">Tharavadi Chicken</h3>
+        <p class="poster-sub">From the family ledger</p>
+        <div class="poster-meta"><span>Half / Full</span><span>·</span><span>U / Spicy</span></div>
+      </div>
+    </article>
+    <article class="poster" data-nav="menu">
+      <div class="poster-img">
+        <div class="poster-rating">★ 4.7</div>
+        <img src="images/chicken-curry-pot.png" alt="Malaikotte Valiban Stew" loading="lazy">
+        <div class="poster-genre">Naadan / Action</div>
+      </div>
+      <div class="poster-body">
+        <h3 class="poster-title">Malaikotte Valiban Stew</h3>
+        <p class="poster-sub">The reviewers' favourite</p>
+        <div class="poster-meta"><span>Pot / 2 ppl</span><span>·</span><span>U / Mild</span></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============================================================
+     02 · THE THEATRE FLOOR (about)
+     ============================================================ -->
+<section class="section section-cream" id="about">
+  <div class="theatre">
+    <div class="theatre-img">
+      <div class="theatre-img-frame"></div>
+      <div class="theatre-img-corner tl"></div>
+      <div class="theatre-img-corner tr"></div>
+      <div class="theatre-img-corner bl"></div>
+      <div class="theatre-img-corner br"></div>
+      <img src="images/interior-1.png" alt="Inside Josettan's Cinema Company">
+    </div>
+    <div>
+      <div class="section-eyebrow"><span class="num">02</span><span>The Theatre Floor</span></div>
+      <h2 class="section-title">Cinema isn't<br>a <em>theme.</em><br>It's the staff.</h2>
+
+      <blockquote class="theatre-quote">
+        "Vishnu walked us through the menu like a film reviewer — the biryani was Pa. Ranjith, the stew was Sathyan Anthikad."
+      </blockquote>
+
+      <div class="theatre-body">
+        <p>We grew up in Thrissur talking about food the way the rest of the world talks about movies — by director, by mood, by which scene it belongs to. So we built a restaurant that does the same.</p>
+        <p>The walls hold the directors who raised us. The menu is the work of one obsessive kitchen running six cuisines. The catering side has fed weddings of every faith in Thrissur and beyond.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     03 · CATERING INQUIRY (multi-step)
+     ============================================================ -->
+<section class="section catering" id="catering">
+  <div class="catering-grid">
+    <div class="cat-summary">
+      <div class="cat-summary-eyebrow">
+        <span class="num" style="width:28px;height:28px;border:1px solid currentColor;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:11px;">03</span>
+        <span>Catering · Book the Production</span>
+      </div>
+      <h2>Build your <em>kalyanam</em> menu in four scenes.</h2>
+      <p>Tell us the occasion and the cuisines, give us a date and a count, and we'll come back with a costed menu inside two working days. Wedding menus run from 18 dishes; corporate from 6.</p>
+      <div class="cat-summary-stats">
+        <div class="hero-stat"><span class="v">50–2,000</span><span class="l">plates per booking</span></div>
+        <div class="hero-stat"><span class="v">2 days</span><span class="l">to a costed quote</span></div>
+      </div>
+
+      <div class="cat-receipt">
+        <div class="rhead">PRELIMINARY · NOT A QUOTE</div>
+        <div class="rline"><span class="l">Occasion</span><span class="v" id="rc-occasion">—</span></div>
+        <div class="rline"><span class="l">Cuisines</span><span class="v cuisines" id="rc-cuisines">—</span></div>
+        <div class="rline"><span class="l">Guests</span><span class="v" id="rc-guests">150</span></div>
+        <div class="rline"><span class="l">Date</span><span class="v" id="rc-date">—</span></div>
+        <div class="rline total"><span class="l">Estimate range</span><span class="v" id="rc-estimate">—</span></div>
+        <div class="cat-receipt-note">Final quote: confirmed menu, GST, service, transport. Pay 20% to lock the date.</div>
+      </div>
+    </div>
+
+    <div class="cat-form" id="cat-form">
+      <div class="cat-steps">
+        <div class="cat-step-pill active" data-pill="1"></div>
+        <div class="cat-step-pill" data-pill="2"></div>
+        <div class="cat-step-pill" data-pill="3"></div>
+        <div class="cat-step-pill" data-pill="4"></div>
+      </div>
+      <div class="cat-step-label">
+        Scene <span class="now" id="cat-step-now">01</span> of 04 — <span id="cat-step-name">Occasion</span>
+      </div>
+
+      <!-- Step 1 · Occasion -->
+      <div class="cat-panel" data-panel="1">
+        <h3 class="cat-step-h">What's the <em>occasion?</em></h3>
+        <div class="choice-grid" id="occasion-grid"></div>
+      </div>
+
+      <!-- Step 2 · Cuisines -->
+      <div class="cat-panel" data-panel="2" hidden>
+        <h3 class="cat-step-h">Which <em>cuisines</em> on the menu?</h3>
+        <div class="cat-count">Pick one or many · <span id="cuisine-count">0</span> selected</div>
+        <div class="choice-grid" id="cuisine-grid"></div>
+      </div>
+
+      <!-- Step 3 · Logistics -->
+      <div class="cat-panel" data-panel="3" hidden>
+        <h3 class="cat-step-h">Date, <em>guests, venue.</em></h3>
+        <div class="field" style="margin-bottom:22px;">
+          <label>Number of guests</label>
+          <div class="field-counter">
+            <button type="button" id="guests-dec" aria-label="Decrease">−25</button>
+            <span class="v" id="guests-val">150</span>
+            <button type="button" id="guests-inc" aria-label="Increase">+25</button>
+          </div>
+        </div>
+        <div class="field-row" style="margin-bottom:18px;">
+          <div class="field">
+            <label>Event date</label>
+            <input type="date" id="cat-date">
+          </div>
+          <div class="field">
+            <label>Venue · area</label>
+            <input type="text" id="cat-venue" placeholder="e.g. Hotel Joy's, Thrissur">
+          </div>
+        </div>
+        <div class="cat-hint">Venue's optional — we cater on-site, at hotels, or run the dinner from the restaurant.</div>
+      </div>
+
+      <!-- Step 4 · Contact -->
+      <div class="cat-panel" data-panel="4" hidden>
+        <h3 class="cat-step-h">How do we <em>reach you?</em></h3>
+        <div class="field-row" style="margin-bottom:18px;">
+          <div class="field">
+            <label>Your name</label>
+            <input type="text" id="cat-name" placeholder="Full name">
+          </div>
+          <div class="field">
+            <label>Phone (WhatsApp)</label>
+            <input type="tel" id="cat-phone" placeholder="+91 …">
+          </div>
+        </div>
+        <div class="field" style="margin-bottom:8px;">
+          <label>Notes for the kitchen</label>
+          <textarea id="cat-notes" rows="3" placeholder="Allergies, must-have dishes, family dietary rules…"></textarea>
+        </div>
+      </div>
+
+      <div class="cat-actions">
+        <button class="cat-back" id="cat-back" disabled>← Back</button>
+        <div class="cat-spacer"></div>
+        <button class="btn-ticket" id="cat-next"><span class="stub-dots"></span><span id="cat-next-label">Continue →</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     04 · MENU BROWSER
+     ============================================================ -->
+<section class="section section-cream" id="menu">
+  <div class="section-head">
+    <div>
+      <div class="section-eyebrow"><span class="num">04</span><span>The Menu · à la carte</span></div>
+      <h2 class="section-title">The <em>full</em> programme</h2>
+    </div>
+    <p class="section-kicker">A working multi-cuisine kitchen — flip between the six rooms. Prices for in-restaurant; catering portioning differs.</p>
+  </div>
+  <div class="menu-tabs" id="menu-tabs"></div>
+  <div class="menu-grid" id="menu-grid"></div>
+</section>
+
+<!-- ============================================================
+     05 · GALLERY
+     ============================================================ -->
+<section class="section section-deep" id="gallery">
+  <div class="section-head">
+    <div>
+      <div class="section-eyebrow"><span class="num">05</span><span>The Reel · stills from the floor</span></div>
+      <h2 class="section-title">Behind the <em>scenes.</em></h2>
+    </div>
+    <p class="section-kicker">The dining room, the directors' wall, the catering spreads. Click any frame to play it full-screen.</p>
+  </div>
+  <div class="gallery" id="gallery-grid"></div>
+</section>
+
+<!-- ============================================================
+     06 · CRITICS (testimonials)
+     ============================================================ -->
+<section class="section section-dark" id="critics">
+  <div class="section-head">
+    <div>
+      <div class="section-eyebrow"><span class="num">06</span><span>What the critics said</span></div>
+      <h2 class="section-title">Five-star <em>reviews.</em></h2>
+    </div>
+    <p class="section-kicker">Sourced from Google, Zomato, and the families who've trusted us with their weddings.</p>
+  </div>
+  <div class="critic-row">
+    <article class="critic-card">
+      <div class="critic-stars">★★★★★</div>
+      <blockquote class="critic-quote">"The chicken stew was indeed a burst of flavours — coconut-milk-rich without being heavy, and the parotta arrived hot enough to steam."</blockquote>
+      <div class="critic-by"><span class="critic-name">— Anjali R.</span><span class="critic-source">Google · 5★</span></div>
+    </article>
+    <article class="critic-card">
+      <div class="critic-stars">★★★★★</div>
+      <blockquote class="critic-quote">"Cinema-themed ambience is unique and creates a very enjoyable atmosphere. Vishnu walked us through the menu like a film reviewer."</blockquote>
+      <div class="critic-by"><span class="critic-name">— Sreejith M.</span><span class="critic-source">Zomato · 5★</span></div>
+    </article>
+    <article class="critic-card">
+      <div class="critic-stars">★★★★★</div>
+      <blockquote class="critic-quote">"Booked them for our reception in Thrissur — 280 guests, every cuisine they promised showed up on time. The Kalyana Biryani earned applause."</blockquote>
+      <div class="critic-by"><span class="critic-name">— The Antony Family</span><span class="critic-source">Wedding Catering · 5★</span></div>
+    </article>
+  </div>
+</section>
+
+<!-- ============================================================
+     07 · RESERVE (seat map)
+     ============================================================ -->
+<section class="section section-teal" id="reserve">
+  <div class="reserve">
+    <div class="reserve-left">
+      <div class="section-eyebrow" style="color:var(--marquee-gold);">
+        <span class="num" style="border-color:var(--marquee-gold);">07</span>
+        <span>Reserve · A Table for the Show</span>
+      </div>
+      <h2 class="section-title" style="color:var(--warm-cream);margin-bottom:24px;">Pick your <em>seat.</em><br>Pick your <em>plate.</em></h2>
+      <p class="reserve-lead">We hold tables 15 minutes past the booking time. The Director's Booth (Row F) sits beneath Bharathan's poster — ask for it.</p>
+      <ul class="reserve-info">
+        <li>● Viyyur, Peringavu · Thrissur</li>
+        <li>● Daily 11:00 → 23:00 · Kitchen closes 22:30</li>
+        <li>● +91 487 — Cinema</li>
+        <li>● Wheelchair accessible</li>
+      </ul>
+    </div>
+
+    <form class="reserve-form" id="reserve-form">
+      <div class="reserve-form-head">
+        <span class="t-mono gold">The Auditorium · Tonight</span>
+        <span class="t-mono muted">Selected · <span id="seat-label">—</span></span>
+      </div>
+      <div class="reserve-seat-map" id="seat-map">
+        <div class="seat screen"></div>
+      </div>
+      <div class="reserve-legend">
+        <span><i class="avail"></i>available</span>
+        <span><i class="yours"></i>yours</span>
+        <span><i class="taken"></i>taken</span>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label>Date</label>
+          <input type="date" id="res-date" required>
+        </div>
+        <div class="field">
+          <label>Showtime</label>
+          <select id="res-time">
+            <option value="11:30">11:30 · matinée</option>
+            <option value="13:00">13:00 · lunch</option>
+            <option value="14:30">14:30 · late lunch</option>
+            <option value="19:30">19:30 · early dinner</option>
+            <option value="20:00" selected>20:00 · prime time</option>
+            <option value="21:30">21:30 · late show</option>
+          </select>
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label>Party of</label>
+          <div class="field-counter">
+            <button type="button" id="party-dec">−</button>
+            <span class="v" id="party-val">2</span>
+            <button type="button" id="party-inc">+</button>
+          </div>
+        </div>
+        <div class="field">
+          <label>Phone</label>
+          <input type="tel" id="res-phone" placeholder="+91 …">
+        </div>
+      </div>
+      <div class="field">
+        <label>Name</label>
+        <input type="text" id="res-name" placeholder="Full name">
+      </div>
+
+      <div style="margin-top:12px;">
+        <button class="btn-ticket" type="submit" id="res-submit"><span class="stub-dots"></span><span id="res-submit-label">Fill in the details</span></button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <a href="#home" class="nav-brand" data-nav="home" style="display:inline-flex;">
+          <svg class="logo-mark" width="44" height="44" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <circle cx="20" cy="20" r="18" stroke="#C9A24B" stroke-width="2" />
+            <circle cx="20" cy="20" r="4.5" fill="#C9A24B" />
+            <circle cx="20" cy="8.5" r="2.6" fill="#C9A24B" />
+            <circle cx="20" cy="31.5" r="2.6" fill="#C9A24B" />
+            <circle cx="8.5" cy="20" r="2.6" fill="#C9A24B" />
+            <circle cx="31.5" cy="20" r="2.6" fill="#C9A24B" />
+            <circle cx="12.2" cy="12.2" r="2.2" fill="#C9A24B" />
+            <circle cx="27.8" cy="12.2" r="2.2" fill="#C9A24B" />
+            <circle cx="12.2" cy="27.8" r="2.2" fill="#C9A24B" />
+            <circle cx="27.8" cy="27.8" r="2.2" fill="#C9A24B" />
+          </svg>
+          <span class="nav-brand-text" style="margin-left:14px;">
+            <span class="top" style="font-size:22px;">JOSETTAN'S</span>
+            <span class="bot">CINEMA COMPANY · THRISSUR</span>
+          </span>
+        </a>
+        <p class="footer-brand-copy">A multi-cuisine restaurant and caterer in Viyyur, Thrissur. Serving Kerala weddings, corporate events, and the occasional Saturday-night film crew.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Zomato">ZO</a>
+          <a href="#" aria-label="JustDial">JD</a>
+        </div>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <p>Cinema Company<br>Restaurant &amp; Caterers<br>Viyyur, Peringavu<br>Thrissur 680022<br>Kerala</p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Mon – Sun<br>11:00 — 23:00<br>Kitchen closes 22:30</p>
+        <p style="margin-top:14px;">Open Onam, Eid, Christmas.</p>
+      </div>
+      <div>
+        <h4>Reach Us</h4>
+        <ul>
+          <li><a href="#">+91 487 — Cinema</a></li>
+          <li><a href="#">catering@josettans.in</a></li>
+          <li><a href="#">@josettans_cinemacompany</a></li>
+          <li><a href="#catering" data-nav="catering" class="accent-red">Book a Catering →</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="c">© 2026 Josettan's Cinema Company · Thrissur</span>
+      <span class="c">A cinematic dining experience · est. 2020</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     LIGHTBOX (gallery overlay)
+     ============================================================ -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox-close" id="lb-close" aria-label="Close">×</button>
+  <button class="lightbox-nav prev" id="lb-prev" aria-label="Previous">‹</button>
+  <button class="lightbox-nav next" id="lb-next" aria-label="Next">›</button>
+  <img class="lightbox-img" id="lb-img" src="" alt="">
+  <div class="lightbox-meta" id="lb-meta"></div>
+</div>
+
+<!-- toast mount -->
+<div id="toast-root"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
